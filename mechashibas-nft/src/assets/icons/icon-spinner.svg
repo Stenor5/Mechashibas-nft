@@ -1,0 +1,30 @@
+<svg
+  viewBox='0 0 100 100'
+  class='icon spinner'
+  width="48px"
+  height="48px"
+>
+  <circle
+    cx='50'
+    cy='50'
+    r='42'
+    fill='none'
+    stroke='#fff'
+    stroke-linecap='round'
+    stroke-inejoin='round'
+    stroke-width='16'
+    stroke-dasharray='283'
+    stroke-dashoffset='280'
+    transform-origin='50% 50%'
+  >
+    <animateTransform
+      attribute-name='transform'
+      attribute-type='XML'
+      type='rotate'
+      from='0 60 70'
+      to='360 60 70'
+      dur='10s'
+      repeat-count='indefinite'
+    ></animateTransform>
+  </circle>
+</svg>

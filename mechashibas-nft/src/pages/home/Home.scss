@@ -1,0 +1,81 @@
+.app-layout {
+  @apply absolute w-full h-full object-cover;
+  background-color: rgba(0, 0, 0, 0.46);
+  background-image: url(/assets/images/homepage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.btn {
+  @apply rounded-lg outline-none border-none cursor-pointer uppercase leading-none;
+  padding: 18px 26px;
+  transition: all 0.5s ease;
+  box-shadow: #ffffff 0px 0px 14px;
+  height: min-content;
+
+  @media (max-width: 767px) {
+    padding: 12px 36px;
+  }
+
+  &:hover {
+    box-shadow: rgb(219, 171, 11) 0px 0px 20px;
+  }
+}
+
+.btn-primary {
+  background-image: linear-gradient(
+    160.85deg,
+    #dfd019 18.73%,
+    #e19460 65.44%,
+    #d17400 97.99%
+  );
+  color: #ffffff;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+main {
+  min-height: 600px;
+
+  .nft-panel {
+    @apply relative flex flex-col justify-center mx-auto my-4;
+    .title {
+      color: rgb(255, 214, 66);
+      font-size: 22px;
+    }
+
+    .nft-counter {
+      @apply relative flex justify-center items-center;
+
+      svg {
+        margin: 0px 22px;
+        cursor: pointer;
+        will-change: transform;
+        transition: all 0.3s linear 0s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .amount {
+        width: 125px;
+        font-size: 87px;
+        text-align: center;
+        line-height: normal;
+        letter-spacing: -0.05em;
+        font-weight: 900;
+        color: #dc8a42;
+        box-shadow: #e0d0d0 0px 0px 14px;
+      }
+    }
+
+    button {
+      margin: auto;
+    }
+  }
+}
