@@ -32,7 +32,7 @@ Explain visually how the site works!
 
 ### Author
 
-Chen Jiao
+Stenor Tanaka
 
 ### Version
 
